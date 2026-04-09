@@ -1,0 +1,231 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #000000, #0a0a0a);
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+#header
+{
+    width: 100vw;
+    padding-bottom: 2vw;
+}
+
+#links
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 1vw 5vw;
+}
+
+#links a
+{
+    text-decoration: none;
+    font-size: 1.2vw;
+    color: #ff6a00;
+    border: 0.1vw solid transparent;
+    padding: 0.4vw 1vw;
+    border-radius: 2vw;
+    transition: 0.3s;
+}
+
+#links a:hover
+{
+    border: 0.1vw solid #ff6a00;
+    background: rgba(255,106,0,0.1);
+}
+
+#mypic
+{
+    height: 18vw;
+    border-radius: 50%;
+}
+
+.mypicborder
+{
+    border: 0.25vw solid #ff6a00;
+    border-radius: 50%;
+    height: 18vw;
+    width: 18vw;
+    margin-left: 7vw;
+    margin-top: 5vw;
+    float: left;
+}
+
+#info
+{
+    margin-top: 5vw;
+    margin-left: 30vw;
+    width: 60vw;
+}
+
+#infoh1
+{
+    font-size: 1.8vw;
+}
+
+#infoh2
+{
+    font-size: 2.5vw;
+    color: #ff6a00;
+}
+
+#infod1
+{
+    font-size: 1.2vw;
+    opacity: 0.85;
+}
+
+#crsl
+{
+    width: 75vw;
+    height: 13vw;
+    margin: auto;
+    margin-top: 5vw;
+    border: 0.1vw solid rgba(255,106,0,0.4);
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.ppanelimg
+{
+    height: 11vw;
+    border-radius: 0.5vw;
+    border: 0.2vw solid #ff6a00;
+}
+
+.ppaneltitle
+{
+    font-size: 1.4vw;
+    color: #ff6a00;
+}
+
+.ppaneldisc
+{
+    font-size: 1.1vw;
+    opacity: 0.8;
+}
+
+#nav
+{
+    position: sticky;
+    top: 0;
+    background: black;
+    z-index: 100;
+    padding: 1vw 0;
+}
+
+.nava
+{
+    display: flex;
+    justify-content: space-around;
+    width: 85vw;
+    margin: auto;
+}
+
+.nava a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2vw;
+    transition: 0.3s;
+}
+
+.nava a:hover
+{
+    color: #ff6a00;
+}
+
+.sub
+{
+    width: 85vw;
+    margin: auto;
+    padding-top: 3vw;
+}
+
+.subh
+{
+    font-size: 2vw;
+    color: #ff6a00;
+    margin-bottom: 2vw;
+}
+
+.subsubp
+{
+    font-size: 1.2vw;
+    opacity: 0.85;
+}
+
+ul li
+{
+    margin-bottom: 0.5vw;
+}
+
+.projtd
+{
+    border: 0.1vw solid rgba(255,106,0,0.3);
+    border-radius: 1vw;
+    padding: 1vw;
+    transition: 0.3s;
+}
+
+.projtd:hover
+{
+    transform: scale(1.03);
+    border-color: #ff6a00;
+}
+
+.projimg
+{
+    width: 100%;
+    border-radius: 1vw;
+}
+
+.projtitle
+{
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    color: #ff6a00;
+}
+
+.projdisc
+{
+    font-size: 1vw;
+    opacity: 0.7;
+}
+
+.projstack
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.projstack p
+{
+    border: 0.1vw solid #ff6a00;
+    border-radius: 1vw;
+    padding: 0.2vw 0.6vw;
+    font-size: 0.9vw;
+}
+
+footer
+{
+    text-align: center;
+    padding: 2vw;
+    margin-top: 3vw;
+    border-top: 0.1vw solid rgba(255,106,0,0.3);
+}
+
+.ppanel
+{
+    animation: slide 5s linear infinite;
+}
+
+@keyframes slide
+{
+    0% { transform: translateY(0%); }
+    100% { transform: translateY(-250%); }
+}
